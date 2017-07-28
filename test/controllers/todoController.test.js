@@ -1,7 +1,6 @@
 const sinon = require('sinon');
-const chai = require('chai')
-const expect = chai.expect;
-const should = chai.should();
+// const expect = require('chai').expect;
+const should = require('chai').should();
 
 require('sinon-mongoose');
 
