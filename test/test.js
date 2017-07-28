@@ -1,2 +1,2 @@
-require('../controllers/todo.controller.test.js');
-require('../integration/todo.integration.test.js');
+require('./controllers/todoController.test.js');
+//require('../integration/todo.integration.test.js');

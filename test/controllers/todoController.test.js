@@ -1,10 +1,11 @@
-var should = require('should'),
-	sinon = require('sinon'),
-	mongoose = require('mongoose');
+const sinon = require('sinon');
+const chai = require('chai')
+const expect = chai.expect;
+const should = chai.should();
 
 require('sinon-mongoose');
 
-var TodoModel = require('../../../app/models/todo.model');
+var TodoModel = require('../../models/todo');
 
 describe('TodoController testing', function () {
 
@@ -21,7 +22,7 @@ describe('TodoController testing', function () {
 				}
 			}
 			var res = {}, next = {};
-			var TodoController = require('../../../app/controllers/todo.controller')(Book);
+			var TodoController = require('../../controllers/todoController')(Book);
 			TodoController.PostTodo(req, res, next);
 			sinon.assert.calledOnce(saveStub);
 		});
